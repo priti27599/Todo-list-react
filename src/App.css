@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
+  text-align: center;
+  background-color: antiquewhite;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.center{
+   width: 35%;
+   height: 80vh;
+   border: 6px solid rgb(252, 136, 136);
+   background-color: wheat;
+   padding: 15px;
+   border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  color: rgb(235, 102, 102);
+  font-size: 40px;
+  padding: 6px 0 2px 0;
+  margin-bottom: 15px;
+  border-radius: 15px;
 }
+
+input{
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  width: 70%;
+  border-bottom: 2px solid #ec878c;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+button{
+  
+  background-image: linear-gradient(to right, rgb(0, 195, 255) 50%, rgb(0, 195, 255) 50%, blue );
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  border: none;
+  padding: 7px 10px 7px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  color:rgb(252, 250, 250);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-position: 100% 0%;
+}
+
+.eachItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f05080;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(128, 6, 6);
+}
+
+.eachItem .fa-trash{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f05080;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: rgb(128, 6, 6);
+  
+}
+
+.eachItem .fa-trash:hover{
+  color: coral;
+}
+
+.showItems{
+  margin-top: 20px;
+}
+
+
+h3{
+  margin-left: 9px;
+}
+
+
+
+
